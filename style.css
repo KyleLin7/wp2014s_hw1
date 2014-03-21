@@ -28,7 +28,7 @@ overflow:hidden;
 	}
 
 	.all {
-			  border: 1px solid red;
+			  /*border: 1px solid red;*/
 			  background-image : url(http://images2.layoutsparks.com/1/152040/train-tracks-love-rail.jpg);
 background-repeat : no-repeat; 
 background-attachment : fixed;
@@ -141,7 +141,6 @@ background-position : 100% 100%;}
  		clear:both;
  		width: 12.5%;
  		float: left;
- 		 border: 1px solid green;
 
  	}
 
