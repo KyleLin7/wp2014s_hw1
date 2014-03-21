@@ -1,0 +1,127 @@
+
+
+	header ul{
+		list-style: none;
+	}
+
+
+	header ul li{
+
+		position: relative; 
+		float: left;
+	}
+
+	div{
+	  /*border: 1px solid green;*/
+	}
+	a {
+	text-decoration: none;	
+
+	}
+
+
+	.otherpages{
+		position: relative; 
+		float: left;
+		z-index: 1;
+		margin: 1cm;
+		margin-left: 4cm;
+	}
+
+
+	/* 其他分頁 */
+	ul.otherpages li {
+		padding: 0;
+		font-size: 16px;
+		text-decoration: none;	
+		box-shadow: 0 6px 12px rgba(0,0,0,.175); 
+
+	}
+			
+	ul.otherpages, ul.otherpages li{
+		list-style: none;
+	} 
+
+	/* 選單 li 之樣式 */
+	ul.otherpages > li {
+		position: relative; 
+		width: auto;
+		float: left;
+	}
+
+
+	/* 選單 li 裡面連結之樣式 */
+	ul.otherpages li a{
+		display: block;
+		padding: 12px 20px;
+		background: #888;
+		color: #FFF; 
+	}
+	/* 特定在第一層，以左邊灰線分隔 */
+	ul.otherpages > li > a{
+		border-bottom: 10px solid #CCC;		 		
+		border-right: 10px solid #CCC;  
+		border-right-color: #696969; 
+		text-align:  center;
+	}
+	ul.otherpages > li > a:hover{
+		color: #666;
+		background: #DDD
+	}
+	/* 特定在第一層 > 第二層下拉部分之樣式 */
+	ul.otherpages ul{
+		display: none;
+		float: left;	
+		position: absolute;			
+		left: 0;	
+		margin: 0; 
+	}
+	/* 當第一層選單被觸發時，指定第二層顯示 */
+	ul.otherpages li:hover > ul{
+		display: block;
+	}			
+	/* 特定在第二層下拉部分 li 之樣式 */
+	ul.otherpages ul li {
+		border-bottom: 1px solid #DDD;
+	}
+	/* 特定在第二層下拉部分 li 之樣式 */
+	ul.otherpages ul li:last-child {
+		border-bottom: none;  
+	}
+	/* 第二層選單 li 之樣式 */
+	ul.otherpages ul a {
+		width: 110px;
+		padding: 10px 12px;	
+		color: #666;		
+		background: #EEE;	
+	}
+	ul.otherpages ul a:hover {	
+		background: #CCC;	
+		text-decoration: underline;
+		color: brown; 
+	}
+
+	a:active{
+ 		color: yellow;		
+ 	}
+ 	.sidebar {
+ 		clear:both;
+ 	}
+
+ 	.list_item  {
+ 		list-style: none;
+		text-decoration: none;
+		width: 12.5%;
+		
+	}
+	.menu {
+		list-style: none;
+		text-decoration: none;	
+		position: relative;
+		display: block;
+		background-color: #fff;
+		border: 2px solid #d4682f;
+		margin-top: 1px;
+	}
+
+
