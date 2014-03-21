@@ -1,6 +1,5 @@
-﻿
-<html>
 
+<html>
 
 <head>
 
@@ -15,17 +14,17 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 
-<title>交通部台灣鐵路管理局</title>
+<title>交通部</title>
 
 </head>
 
-<body>
+<body class ="all">
 <header>
-<img src="http://railway.hinet.net/Images/top_2.jpg"alt="網路訂票作業系統">
-<header>
+<img class="headpic" src="http://railway.hinet.net/Images/top_2.jpg"alt="網路訂票作業系統">
+</header>
 
 <nav>
-<img src="http://railway.hinet.net/Images/title_index.jpg"alt="歡迎使用臺鐵網路訂票系統">
+<img class="headpic2" src="http://railway.hinet.net/Images/title_index.jpg"alt="歡迎使用臺鐵網路訂票系統">
 </nav>
 <ul class="otherpages">
 <li>
@@ -113,71 +112,82 @@
 
 <div class="sidebar">
 
-<div class="list_item" id="a" >
-
-<img src="http://railway.hinet.net//Images/menu_go_01a.jpg" alt="訂單程票" style="cursor:pointer;" onclick="divShowHide(document.getElementById('a'))">
-
-  <a href="http://railway.hinet.net//ctnul.htm"   target="cMain" class="menu">車次訂單程票</a>
-  <a href="http://railway.hinet.net//ctkind1.htm" target="cMain" class="menu">車種訂單程票</a>
-</div>
-
-<div class="list_item" id="b" >
-
-<img src="http://railway.hinet.net//Images/menu_round_01a.jpg" alt="訂去回票" style="cursor:pointer;" onclick="divShowHide(document.getElementById('b'))">
-
-  <a href="http://railway.hinet.net/ctnul.htm"   target="cMain" class="menu">車次訂去回票</a>
-  <a href="http://railway.hinet.net//ctkind2.htm" target="cMain" class="menu">車種訂去回票</a>
-</div>
-
-<div>
-<a href="http://railway.hinet.net///coquery.htm" target="cMain">
-<img src="http://railway.hinet.net//Images/menu_record_01a.jpg" alt="訂票紀錄"></a>
-</div>
-<div>
-<a href="http://railway.hinet.net//ccancel.htm" target="cMain"><img src="http://railway.hinet.net//Images/menu_cancel_08a.jpg" alt="取消訂票"></a>
-</div>
-<div class="list_item" id="c">
-
-<img src="http://railway.hinet.net//Images/menu_query_09a.jpg" alt="查詢功能" style="cursor:pointer;" onclick="divShowHide(document.getElementById('c'))">
-
-  <a href="http://railway.hinet.net//coquery.htm"   target="cMain" class="menu">查詢訂票紀錄</a>
-
-  <a href="http://railway.hinet.net//cfind.htm" target="cMain" class="menu">查詢電腦代碼</a>
 
 
-  <a href="http://210.71.181.60/csearch.htm"   target="cMain" class="menu">查詢剩餘車票</a>
+<ul>
+<a href="#" class="button">訂單程票</a>
 
 
+<li><a href="./ctno1.htm"   target="cMain" class="menu">車次訂單程票</a></li>
+<li><a href="./ctkind1.htm" target="cMain" class="menu">車種訂單程票</a>
+</li>
+</ul>
 
-  <a href="http://railway.hinet.net//station_code.htm" target="cMain" class="menu">查詢車站代碼</a>
-</div>
+<ul>
+<a href="#" class="button hotpink">訂去回票</a>
+<li><a href="./ctno2.htm"   target="cMain" class="menu">車次訂去回票</a></li>
+<li><a href="./ctkind2.htm" target="cMain" class="menu">車種訂去回票</a></li>
+</ul>
 
-<div>
+<ul><a href="#" class="button red">訂票紀錄</a></ul>
+<ul><a href="#" class="button orange">取消訂票</a></ul>
 
-<a href="http://twtraffic.tra.gov.tw/twrail/" target="new"><img src="http://railway.hinet.net//Images/menu_time_09a.jpg" alt="時刻查詢"></a>
-</div>
+<ul>
+<a href="#" class="button ltgreen">查詢功能</a>
+<li><a href="./coquery.htm"   target="cMain" class="menu">查詢訂票紀錄</a></li>
+<li><a href="./cfind.htm" target="cMain" class="menu">查詢電腦代碼</a></li>
+<li><a href="http://210.71.181.60/csearch.htm"   target="cMain" class="menu">查詢剩餘車票</a></li>
+<li><a href="./station_code.htm" target="cMain" class="menu">查詢車站代碼</a></li>
+</ul>
+<ul>
+<a href="#" class="button yellow">時刻查詢</a>
+</ul>
+<ul>
+<a href="#" class="button green">團體訂票</a>
+<li><a href="http://resgt.railway.gov.tw/groupticket/index.htm" target="new" class="menu">團體訂票</a></li>
+<li><a href="http://www.railway.gov.tw/tw/CP.aspx?sn=14337" target="new" class="menu">人車同行</a>
+</li>
+</ul>
 
-<div class="list_item" id="d" >
+<ul><a href="#" class="button aqua">優惠特區</a></ul>
+<ul><a href="#" class="button purple">外國旅客訂票(Booking Online)</a></ul>
 
-<img src="http://railway.hinet.net//Images/menu_sepcial_05a.jpg" alt="團體訂票" style="cursor:pointer;" onclick="divShowHide(document.getElementById('d'))">
-
-  <a href="http://resgt.railway.gov.tw/groupticket/index.htm" target="new" class="menu">團體訂票</a>
-
-  <a href="http://www.railway.gov.tw/tw/CP.aspx?sn=14337" target="new" class="menu">人車同行</a>
-</div>
-
-<div>
-
-<a href="http://www.railway.gov.tw/tw/news.aspx?NewsType=7" target="new"><img src="http://railway.hinet.net//Images/menu_onsale_05a.jpg" alt="優惠特區"></a>
-</div>
-<div>
-
-<a href="http://railway.hinet.net//net_eng.htm" target="cMain"><img src="http://railway.hinet.net//Images/menu_onsale_enga.jpg" alt="Booking Online"></a>
-</div>
 
 
 </div>
+<div >
+<div class = "content"><span>
+<ul class = "note">《重要通知》</ul>
+<ol class = "labels-list "><li>
+	
+本局103年清明連續假期（4月4日~4月6日）車票訂於103年3月20日(星期四)零時(0：00)起開放網路及電話語音訂購3月20日至4月7日之全線對號列車乘車票。訂票首日（3月20日），餘位查詢功能於0:00~01:00時暫時關閉，並於網路訂票完成30分鐘（00:30）後方可至各大超商取票。
+</li>
+<li>
+	
+配合花東線鐵路電氣化工程臺鐵局夜車行駛調整。
 
+為配合交通部鐵路改建工程局花東線鐵路電氣化工程施工需要，臺鐵局606次莒光號自102年6月3日（星期一）起至103年3月31日（星期一）止，逢週一至週四（跨次日，國定假日及特殊日期除外）及9月份起部分週日停駛，改開行樹林→花蓮間610次莒光號，花蓮→臺東間則改以公路客運接駁旅客。
+
+為方便旅客購票，610次莒光號全區間（含花蓮→臺東公路接駁區間，共有5條路線）仍由本局各售票通路統一發售車票，請往花蓮－臺東間各站旅客留意下列事項：
+
+請事先於各車站或其他售票通路購票
+請於花蓮站前站轉乘接駁公路客運
+抵達花蓮站時依票面指定客運路線轉乘公路客運
+由花蓮－臺東間各站上車之旅客，請依服務人員指示到指定地點搭乘接駁公路客運
+610次開行日期、時刻表及5條客運接駁路線如附件，相關資訊請參閱臺鐵網站（網址：http://www.railway.gov.tw）及各車站公告。
+</li>
+<li>
+	
+為產生新的訂票日期，訂票網頁於每日23:00重新更新可訂票日期，訂票時請確認新的日期是否產生，如未產生請將網頁「重新整理」，詳細操作說明請參閱《訂票系統操作說明》之《新訂票日期及網頁更新》內容。
+</li>
+</ol>
+</span>
+</div>
+</div>
+
+<footer>
+	Designed by Lin.
+</footer>
 </body>
 
 
