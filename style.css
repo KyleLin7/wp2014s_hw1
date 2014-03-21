@@ -1,0 +1,395 @@
+img {
+/* IE7、FF 等其他非 IE 瀏覽器下最大寬度為 500px , IE6 以下不支援 max-width 屬性 */
+max-width:1500px;
+/* 所有瀏覽器中圖片的大小為 500px */
+width:1500px;
+/* 當圖片大小大於 500px，自動縮小為 500px */
+width:expression(document.body.clientWidth>500?"500px":"auto");
+overflow:hidden;
+}
+
+	header ul{
+		list-style: none;
+	}
+
+
+	header ul li{
+
+		position: relative; 
+		float: left;
+	}
+
+	div{
+	 /* border: 1px solid green;*/
+	}
+	a {
+	text-decoration: none;	
+
+	}
+
+	.all {
+			  border: 1px solid red;
+			  background-image : url(http://images2.layoutsparks.com/1/152040/train-tracks-love-rail.jpg);
+background-repeat : no-repeat; 
+background-attachment : fixed;
+background-position : 100% 100%;}
+}
+
+	.headpic {
+		display:block;
+		margin: auto;
+		width: auto;
+	    height : auto;
+ height: 100%;
+  width: 100%;
+
+	}
+
+	.headpic2 {
+		 display:block;
+		  margin: auto;
+		  padding: 1em;
+		  width: auto;
+	    height : auto;
+		}
+	.otherpages{
+		position: relative; 
+		float: left;
+		z-index: 1;
+		margin-bottom: 1cm;
+		margin-left: 4cm;
+	}
+
+
+	/* 其他分頁 */
+	ul.otherpages li {
+		padding: 0;
+		font-size: 16px;
+		text-decoration: none;	
+		box-shadow: 0 6px 12px rgba(0,0,0,.175); 
+
+	}
+			
+	ul.otherpages, ul.otherpages li{
+		list-style: none;
+	} 
+
+	/* 選單 li 之樣式 */
+	ul.otherpages > li {
+		position: relative; 
+		width: auto;
+		float: left;
+	}
+
+
+	/* 選單 li 裡面連結之樣式 */
+	ul.otherpages li a{
+		display: block;
+		padding: 12px 20px;
+		background: #888;
+		color: #FFF; 
+	}
+	/* 特定在第一層，以左邊灰線分隔 */
+	ul.otherpages > li > a{
+		border-bottom: 10px solid #CCC;		 		
+		border-right: 10px solid #CCC;  
+		/*border-right-color: #696969;*/ 
+		text-align:  center;
+	}
+	ul.otherpages > li > a:hover{
+		color: #666;
+		background: #DDD
+	}
+	/* 特定在第一層 > 第二層下拉部分之樣式 */
+	ul.otherpages ul{
+		display: none;
+		float: left;	
+		position: absolute;			
+		left: 0;	
+		margin: 0; 
+		margin-left: -1cm;
+	}
+	/* 當第一層選單被觸發時，指定第二層顯示 */
+	ul.otherpages li:hover > ul{
+		display: block;
+	}			
+	/* 特定在第二層下拉部分 li 之樣式 */
+	ul.otherpages ul li {
+	/*	border-bottom: 1px solid #DDD;*/
+	}
+	/* 特定在第二層下拉部分 li 之樣式 */
+	ul.otherpages ul li:last-child {
+		border-bottom: none;  
+	}
+	/* 第二層選單 li 之樣式 */
+	ul.otherpages ul a {
+		width: 110px;
+		padding: 10px 12px;	
+		color: #666;		
+		background: #EEE;	
+	}
+	ul.otherpages ul a:hover {	
+		background: #CCC;	
+		text-decoration: underline;
+		color: brown; 
+	}
+
+	a:active{
+ 		color: yellow;		
+ 	}
+ 	.sidebar {
+ 		clear:both;
+ 		width: 12.5%;
+ 		float: left;
+ 		 border: 1px solid green;
+
+ 	}
+
+ 	.list_item  {
+ 		list-style: none;
+		text-decoration: none;
+	}
+	.list_item img{
+		width: 180px;
+		height: 45px;
+	}
+	.menu {
+		list-style: none;
+		text-decoration: none;	
+		position: relative;
+		display: block;
+		background-color: #fff;
+		/*border: 2px solid #d4682f;*/
+		margin-top: 1px;
+		/*float: left;*/
+	}
+	.content {
+		width: 60%;
+		float: right;
+		position: relative;
+		margin: auto;
+		font-size: 1.3em;
+		margin-right: 12em;
+
+	}
+	.note{
+		font-weight : 9;
+		font:  bold;
+		color: red;
+	}
+	.box {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+  border-radius: 2%     0%     0%     0% /     20%     0%     0%     0%;
+}
+.box:before {
+	clear: both;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 33%;
+    height: 25%;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.5);
+    -webkit-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+     -moz-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+     -ms-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+     -o-transform: rotate(7deg) translate(20px,25px) skew(20deg);
+     transform: rotate(7deg) translate(20px,25px) skew(20deg);
+    }
+    ol.circles-list {
+    	position: relative;
+    	z-index: -3;
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 4em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+}
+ol.labels-list {
+    list-style-type: none;
+    list-style-type: decimal !ie; /*IE 7- hack*/
+     
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+     
+    counter-reset: li-counter;
+    	position: relative;
+    	z-index: -3;
+}
+ol.labels-list > li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    background-color: #eaeaea;
+}
+ol.labels-list > li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+     
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #464646;
+    background-color: #d0d0d0;
+     
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+}
+/*Code to calculate the colors*/
+.button {
+	width: 100px;
+  font: bold 22px/21px Helvetica;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  margin: 10px;
+  display: inline-block;
+  color: black;
+  background: #db7793;
+}
+/*Color Classes*/
+.hotpink {
+  text-shadow: 0 1px 0 #7d1652;
+  border: 1px solid #a81e6e;
+  box-shadow: inset 0px 1px 0 #efa3cf;
+  background: #df4da2;
+    color: black;
+
+}
+.hotpink:hover {
+  background: #e778b9;
+}
+.hotpink:active {
+  background: #db3797;
+  box-shadow: inset 0px 1px 2px #7d1652;
+}
+.red {
+  text-shadow: 0 1px 0 #550f11;
+  border: 1px solid #81161a;
+  box-shadow: inset 0px 1px 0 #e87b7f;
+  background: #d8252c;
+}
+.red:hover {
+  background: #e14f55;
+}
+.red:active {
+  background: #c22128;
+  box-shadow: inset 0px 1px 2px #550f11;
+}
+.orange {
+  text-shadow: 0 1px 0 #7c3906;
+  border: 1px solid #ad5008;
+  box-shadow: inset 0px 1px 0 #f9b988;
+  background: #f58026;
+}
+.orange:hover {
+  background: #f79d57;
+}
+.orange:active {
+  background: #f4720e;
+  box-shadow: inset 0px 1px 2px #7c3906;
+}
+.yellow {
+  text-shadow: 0 1px 0 #785208;
+  border: 1px solid #a8720b;
+  box-shadow: inset 0px 1px 0 #f7d188;
+  background: #f1ac28;
+}
+.yellow:hover {
+  background: #f4be58;
+}
+.yellow:active {
+  background: #efa310;
+  box-shadow: inset 0px 1px 2px #785208;
+}
+.ltgreen {
+  text-shadow: 0 1px 0 #33390b;
+  border: 1px solid #596413;
+  box-shadow: inset 0px 1px 0 #d0e162;
+  background: #a6ba23;
+}
+.ltgreen:hover {
+  background: #c4d937;
+}
+.ltgreen:active {
+  background: #93a51f;
+  box-shadow: inset 0px 1px 2px #33390b;
+}
+.green {
+  text-shadow: 0 1px 0 #020f05;
+  border: 1px solid #093b12;
+  box-shadow: inset 0px 1px 0 #31df51;
+  background: #17932e;
+}
+.green:hover {
+  background: #1ebf3c;
+}
+.green:active {
+  background: #147d27;
+  box-shadow: inset 0px 1px 2px #020f05;
+}
+.aqua {
+  text-shadow: 0 1px 0 #11403f;
+  border: 1px solid #1c6867;
+  box-shadow: inset 0px 1px 0 #76dad8;
+  background: #32b8b6;
+}
+.aqua:hover {
+  background: #4ecfcd;
+}
+.aqua:active {
+  background: #2da4a2;
+  box-shadow: inset 0px 1px 2px #11403f;
+}
+.purple {
+  text-shadow: 0 1px 0 #4c008f;
+  border: 1px solid #6700c2;
+  box-shadow: inset 0px 1px 0 #cb8fff;
+  background: #9b29ff;
+}
+.purple:hover {
+  background: #b35cff;
+}
+.purple:active {
+  background: #8f10ff;
+  box-shadow: inset 0px 1px 2px #4c008f;
+}
+
+
+
+
+
+
+footer {
+
+	clear: both;
+	text-align:center;
+}
+
+
